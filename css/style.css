@@ -1,0 +1,508 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #8260b2;
+    overflow: hidden;
+}
+
+body h2 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: #4e1468;
+}
+
+.menu {
+    height: 49.2em;
+    background: #4e1468;
+    background: -moz-linear-gradient(left, #4e1468 0%, #8260b2 100%);
+    background: -webkit-linear-gradient(left, #4e1468 0%, #8260b2 100%);
+    background: linear-gradient(to right, #4e1468 0%, #8260b2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4e1468', endColorstr='#8260b2', GradientType=1);
+}
+
+.menu img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5%;
+    width: 100vh;
+    height: 550px;
+    /* margin: 118px 0 118px;   */
+}
+
+#setTimeout {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 50px;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: lightskyblue;
+}
+
+#setTimeout:hover {
+    background-color: #8260b2;
+    border-radius: 10%;
+}
+
+.menu h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-weight: bold;
+}
+
+.gameWorld {
+    position: absolute;
+    background-color: #8260b2;
+    width: 8010px;
+    height: 770px;
+}
+
+.gameWorld img {
+    height: 766px;
+}
+
+.audio {
+    position: fixed;
+    color: red;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#map {
+    position: absolute;
+    width: 8010px;
+    height: 425px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 1;
+    margin: auto;
+}
+
+.Player {
+    background-image: url(../images/player.png);
+    background-repeat: no-repeat;
+    background-size: 310px 104%;
+    background-position: -8px;
+    width: 55px;
+    height: 85px;
+    position: absolute;
+    top: 0px;
+    left: 260px;
+}
+
+#lava_1 {
+    position: absolute;
+    background-image: url(../images/lava.png);
+    width: 565px;
+    height: 82px;
+    top: 442px;
+    left: 1017px;
+}
+
+#lava_2 {
+    position: absolute;
+    background-image: url(../images/lava.png);
+    width: 1021px;
+    height: 82px;
+    top: 520px;
+    left: 5737px;
+}
+
+#lava_3 {
+    position: absolute;
+    background-image: url(../images/lava.png);
+    width: 150px;
+    height: 82px;
+    top: 520px;
+    left: 6926px;
+}
+
+#lava_4 {
+    position: absolute;
+    background-image: url(../images/lava.png);
+    width: 150px;
+    height: 82px;
+    top: 520px;
+    left: 7244px;
+}
+
+#thorn_1 {
+    position: absolute;
+    background-image: url(../images/ship.png);
+    background-size: 134px;
+    background-repeat: no-repeat;
+    width: 129px;
+    height: 38px;
+    top: 425px;
+    left: 3093px;
+}
+
+#thorn_2 {
+    position: absolute;
+    background-image: url(../images/ship.png);
+    background-size: 134px;
+    background-repeat: no-repeat;
+    width: 129px;
+    height: 38px;
+    top: 425px;
+    left: 3383px;
+}
+
+#thorn_3 {
+    position: absolute;
+    background-image: url(../images/ship.png);
+    background-size: 134px;
+    background-repeat: no-repeat;
+    width: 129px;
+    height: 38px;
+    top: 425px;
+    left: 3781px;
+}
+
+#thorn_4 {
+    position: absolute;
+    background-image: url(../images/ship.png);
+    background-size: 134px;
+    background-repeat: no-repeat;
+    width: 129px;
+    height: 38px;
+    top: 425px;
+    left: 4072px;
+}
+
+#coin_1 {
+    position: absolute;
+    background-image: url(../images/coin.png);
+    background-repeat: no-repeat;
+    background-size: 32px;
+    width: 32px;
+    height: 32px;
+    top: 145px;
+    left: 1268px;
+}
+
+#coin_2 {
+    position: absolute;
+    background-image: url(../images/coin.png);
+    background-repeat: no-repeat;
+    background-size: 32px;
+    width: 32px;
+    height: 32px;
+    top: 444px;
+    left: 3642px;
+}
+
+#coin_3 {
+    position: absolute;
+    background-image: url(../images/coin.png);
+    background-repeat: no-repeat;
+    background-size: 32px;
+    width: 32px;
+    height: 32px;
+    top: 101px;
+    left: 6288px;
+}
+
+#minimaus {
+    position: absolute;
+    background-image: url(../images/minimaus.png);
+    background-repeat: no-repeat;
+    background-size: 79px;
+    width: 75px;
+    height: 99px;
+    top: 515px;
+    left: 7872px;
+}
+
+.coin {
+    position: fixed;
+    top: 5%;
+    color: red;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.live {
+    position: fixed;
+    top: 10%;
+    color: red;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#blockDiv_1 {
+    position: absolute;
+    background-image: url(../images/pol.png);
+    width: 100%;
+    top: 615px;
+    left: 1px;
+}
+
+#blockDiv_2 {
+    position: absolute;
+    background-image: url(../images/kub.png);
+    background-repeat: no-repeat;
+    background-size: 165px;
+    width: 165px;
+    height: 152px;
+    top: 462px;
+    left: 518px;
+}
+
+#blockDiv_3 {
+    position: absolute;
+    background-image: url(../images/kub.png);
+    background-repeat: no-repeat;
+    background-size: 165px;
+    width: 165px;
+    height: 152px;
+    top: 312px;
+    left: 684px;
+}
+
+#blockDiv_4 {
+    position: absolute;
+    background-image: url(../images/kub.png);
+    background-repeat: no-repeat;
+    background-size: 165px;
+    width: 165px;
+    height: 152px;
+    top: 161px;
+    left: 849px;
+}
+
+#blockDiv_5 {
+    position: absolute;
+    background-image: url(../images/geran.png);
+    background-repeat: no-repeat;
+    background-size: 373px;
+    width: 380px;
+    height: 61px;
+    top: 197px;
+    left: 1104px;
+}
+
+#blockDiv_6 {
+    position: absolute;
+    background-image: url(../images/kub.png);
+    background-repeat: no-repeat;
+    background-size: 165px;
+    width: 165px;
+    height: 152px;
+    top: 161px;
+    left: 1585px;
+}
+
+#blockDiv_7 {
+    position: absolute;
+    background-image: url(../images/kub.png);
+    background-repeat: no-repeat;
+    background-size: 165px;
+    width: 165px;
+    height: 152px;
+    top: 309px;
+    left: 1748px;
+}
+
+#blockDiv_8 {
+    position: absolute;
+    background-image: url(../images/kub.png);
+    background-repeat: no-repeat;
+    background-size: 165px;
+    width: 165px;
+    height: 152px;
+    top: 460px;
+    left: 1914px;
+}
+
+#blockDiv_9 {
+    position: absolute;
+    background-image: url(../images/kub.png);
+    background-repeat: no-repeat;
+    background-size: 165px;
+    width: 165px;
+    height: 152px;
+    top: 459px;
+    left: 2928px;
+}
+
+#blockDiv_10 {
+    position: absolute;
+    background-image: url(../images/tup.png);
+    background-repeat: no-repeat;
+    background-size: 165px;
+    width: 1120px;
+    height: 121px;
+    top: 490px;
+    left: 3093px;
+}
+
+#blockDiv_11 {
+    position: absolute;
+    background-image: url(../images/kub.png);
+    background-repeat: no-repeat;
+    background-size: 165px;
+    width: 165px;
+    height: 151px;
+    top: 459px;
+    left: 4215px;
+}
+
+#blockDiv_12 {
+    position: absolute;
+    background-image: url(../images/kub.png);
+    background-repeat: no-repeat;
+    background-size: 165px;
+    width: 165px;
+    height: 151px;
+    top: 458px;
+    left: 4858px;
+}
+
+#blockDiv_13 {
+    position: absolute;
+    background-image: url(../images/kub.png);
+    background-repeat: no-repeat;
+    background-size: 165px;
+    width: 165px;
+    height: 300px;
+    top: 309px;
+    left: 5216px;
+}
+
+#blockDiv_14 {
+    position: absolute;
+    background-image: url(../images/kub.png);
+    background-repeat: no-repeat;
+    background-size: 165px;
+    width: 165px;
+    height: 151px;
+    top: 461px;
+    left: 5569px;
+}
+
+#blockDiv_15 {
+    position: absolute;
+    background-image: url(../images/kub.png);
+    background-repeat: no-repeat;
+    background-size: 165px;
+    width: 330px;
+    height: 151px;
+    top: 281px;
+    left: 5822px;
+}
+
+#blockDiv_16 {
+    position: absolute;
+    background-image: url(../images/kub.png);
+    background-repeat: no-repeat;
+    background-size: 165px;
+    width: 330px;
+    height: 151px;
+    top: 281px;
+    left: 6376px;
+}
+
+#blockDiv_17 {
+    position: absolute;
+    background-image: url(../images/kub.png);
+    background-repeat: no-repeat;
+    background-size: 165px;
+    width: 165px;
+    height: 151px;
+    top: 460px;
+    left: 6760px;
+}
+
+#blockDiv_18 {
+    position: absolute;
+    background-image: url(../images/kub.png);
+    background-repeat: no-repeat;
+    background-size: 165px;
+    width: 165px;
+    height: 151px;
+    top: 460px;
+    left: 7078px;
+}
+
+#blockDiv_19 {
+    position: absolute;
+    background-image: url(../images/kub.png);
+    background-repeat: no-repeat;
+    background-size: 165px;
+    width: 165px;
+    height: 151px;
+    top: 460px;
+    left: 7394px;
+}
+
+#blockDiv_20 {
+    position: absolute;
+    background-image: url(../images/kub.png);
+    background-repeat: no-repeat;
+    background-size: 165px;
+    width: 370px;
+    height: 151px;
+    top: 226px;
+    left: 7641px;
+}
+
+#blockDiv_21 {
+    position: absolute;
+    width: 22px;
+    height: 613px;
+    top: 0px;
+    left: 0px;
+}
+
+#blockDiv_22 {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: 22px;
+}
+
+#enemy_1 {
+    position : absolute;
+    background-image : url(../images/hakarakord.png);
+    width : 75px;
+    height :  75px;
+    top: 539px;
+    left: 2617px;
+    background-size: 75px 100%;
+}
+
+#enemy_2 {
+    position : absolute;
+    background-image : url(../images/hakarakord.png);
+    width : 75px;
+    height :  75px;
+    top: 539px;
+    left: 2306px;
+    background-size: 75px 100%;
+}
+
+#enemy_3 {
+	position: absolute;
+	background-image: url(../images/samalot.png);
+	width : 95px;
+    height : 85px;
+	top: 159px;
+    left: 6225px;
+	background-size: 95px 100%;
+}
